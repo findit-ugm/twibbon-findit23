@@ -16,5 +16,4 @@ async def predict_tf(request: Img):
             status_code=404, detail="Image could not be downloaded"
 
         )
-
     return prediction

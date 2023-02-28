@@ -39,3 +39,16 @@ Access at `http://0.0.0.0:8000/docs/`
 
 `https://www.instagram.com/p/Co3XdlDBqQx/`
 `https://www.instagram.com/p/Co3XdlDBqQx`
+
+**Curl Example**
+
+```sh
+curl -X 'POST' \
+  'http://10.211.55.3:8000/v1/predict/tf/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "category": "string",
+  "img_url": ["https://www.instagram.com/p/Co4mP5nBQ6B/", "https://www.instagram.com/p/Co4mNvrh_lv/", "https://www.instagram.com/p/Co4mKhWh-MK/", "https://www.instagram.com/p/Co3XkbyBQ9H/"]
+}'
+```
